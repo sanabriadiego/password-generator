@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8f173df580.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Password Generator</title>
 </head>
 <body>
@@ -11,15 +16,17 @@
         <section class="section-main">
             <h1 class="section-main-title">Generate a <span class="light-text">random password</span></h1>
             <p class="section-main-text">Never use an insecure password again.</p>
-            <input id="input-range" type="range" value="10" min="10" max="22">
-            <div id="range-value"></div>
-            <button id="password-btn" class="section-main-btn">Generate passwords</button>
+            <div class="section-main-range-container">
+                <div id="range-value" class="section-main-range-value"></div>
+                <input id="input-range" class="section-main-input" type="range" value="10" min="10" max="22">
+            </div>
+            <button id="password-btn" class="section-main-btn"><i class="fa-solid fa-bolt"></i>Generate passwords</button>
         </section>
         <section class="section-password">
-            <div id="password-box1" class="section-password-box"></div>
-            <div id="password-box2" class="section-password-box"></div>
-            <div id="password-box3" class="section-password-box"></div>
-            <div id="password-box4" class="section-password-box"></div>
+            <div id="password-box1" class="section-password-box"><i class="fa-solid fa-ellipsis"></i></div>
+            <div id="password-box2" class="section-password-box"><i class="fa-solid fa-ellipsis"></i></div>
+            <div id="password-box3" class="section-password-box"><i class="fa-solid fa-ellipsis"></i></div>
+            <div id="password-box4" class="section-password-box"><i class="fa-solid fa-ellipsis"></i></div>
         </section>
     </main>
     <script src="./index.js"></script>    

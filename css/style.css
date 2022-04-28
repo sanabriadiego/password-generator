@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 54px 52px;
+    background-color: #ECFDF5;
+}
+
+.section-main{
+    padding-top: 56px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #D5D4D8;
+}
+
+.section-main-title{
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 40px;
+    letter-spacing: -0.05em;
+    color: #2B283A;
+}
+
+.section-main-text{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: #6B7280;
+}
+
+.section-main-range-container{
+    margin-bottom: 15px;
+}
+
+.section-main-range-value{
+    font-size: 20px;
+    font-weight: 500;
+    color: #273549;
+}
+
+.section-main-input{
+    cursor: pointer;
+}
+
+.section-main-btn{
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    background: #10B981;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.fa-bolt{
+    margin-right: 12px;
+}
+
+.section-password{
+    padding-top: 35px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 27px;
+}
+
+.fa-ellipsis{
+    color: #3F516B;
+}
+
+.section-password-box{
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.5em 1em;
+    color: #5DEF92;
+    background-color: #273549;
+    border-radius: 6px;
+    text-align: center;
+}
