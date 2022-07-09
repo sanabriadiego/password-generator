@@ -32,4 +32,18 @@ function renderBoxes(){
     passwordBox4El.textContent = generatePassword()
 }
 
+function copyPassword(id){
+    const copyText = document.getElementById(`${id}`).innerText
+    navigator.clipboard.writeText(copyText).then(() => {
+        // Alert the user that the action took place.
+        // Nobody likes hidden stuff being done under the hood!
+        alert("Copied to clipboard")
+    })
+    console.log(copyText)
+}
+
 passwordBtnEl.addEventListener("click", renderBoxes)
+passwordBox1El.addEventListener("click", () => copyPassword("password-box1"))
+passwordBox2El.addEventListener("click", () => copyPassword("password-box2"))
+passwordBox3El.addEventListener("click", () => copyPassword("password-box3"))
+passwordBox4El.addEventListener("click", () => copyPassword("password-box4"))
