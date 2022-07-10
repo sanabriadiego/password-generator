@@ -1,3 +1,5 @@
+/*GENERAL*/
+
 *{
     box-sizing: border-box;
 }
@@ -7,8 +9,10 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+/*MAIN*/
+
 main{
-    max-width: 650px;
+    max-width: 400px;
     margin: 0 auto;
     padding: 54px 52px;
     background-color: #ECFDF5;
@@ -72,8 +76,8 @@ main{
 .section-password{
     padding-top: 35px;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 24px 27px;
 }
 
@@ -89,4 +93,20 @@ main{
     background-color: #273549;
     border-radius: 6px;
     text-align: center;
+    cursor: pointer;
 }
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 600px){
+
+    main{
+        max-width: 650px;
+    }
+
+    .section-password{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
