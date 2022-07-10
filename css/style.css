@@ -98,15 +98,44 @@ main{
 
 /*MEDIA QUERIES*/
 
-@media (min-width: 600px){
+/* @media (min-width: 450px){
+    main{
+        max-width: 480px;
+    }
+} */
+
+@media (min-width: 630px){
 
     main{
-        max-width: 650px;
+        max-width: 800px;
+    }
+
+    .section-main-title{
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .section-main-text{
+        font-size: 25px;
+    }
+
+    .section-main-range-value{
+        font-size: 23px;
+    }
+
+    .section-main-range-container{
+        margin-bottom: 20px;
+    }
+
+    .section-main-btn{
+        font-size: 20px;
     }
 
     .section-password{
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
+
 }
 
